@@ -58,6 +58,7 @@ public class BasicDashboard extends Fragment implements LatestTransactionAdapter
 
         mLatestTransactionViewModel = new ViewModelProvider(requireActivity()).get(LatestTransactionViewModel.class);
         mLatestTransactionViewModel.getLatestTransactionObserver().observe(getViewLifecycleOwner(), latestTransactions -> {
+
             mLatestTransactions = latestTransactions;
             mAdapter.submitList(latestTransactions);
             mAdapter.setLatestTransactions(latestTransactions);

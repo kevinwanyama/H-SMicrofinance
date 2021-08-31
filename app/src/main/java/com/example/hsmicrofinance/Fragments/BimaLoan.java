@@ -20,6 +20,7 @@ public class BimaLoan extends Fragment {
     FragmentBimaLoanBinding mFragmentBimaLoanBinding;
 
     public BimaLoan() {
+        //@todo add constructor
         // Required empty public constructor
     }
 

@@ -17,58 +17,64 @@
             android:textColor="@color/dark_green"
             android:layout_marginTop="20dp"
             android:id="@+id/investheader"/>
+
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/standard_card"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/investheader"
-        android:layout_marginTop="20dp"
-        app:cardBackgroundColor="@color/dark_blue"
         android:layout_centerHorizontal="true"
-        android:id="@+id/standard_card">
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/dark_blue">
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp" >
+            android:layout_margin="5dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/white">
+
                 <TextView
+                    android:id="@+id/std_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/standard"
                     android:layout_centerHorizontal="true"
+                    android:text="@string/standard"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textStyle="bold"
                     android:textColor="@color/dark_blue"
-                    android:id="@+id/std_text"/>
+                    android:textStyle="bold" />
+
                 <TextView
+                    android:id="@+id/std_range"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/limit_ksh_500_ksh_20000"
                     android:layout_below="@id/std_text"
                     android:layout_centerHorizontal="true"
-                    android:textColor="@color/dark_blue"
+                    android:text="@string/limit_ksh_500_ksh_20000"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:id="@+id/std_range"/>
+                    android:textColor="@color/dark_blue" />
+
                 <TextView
+                    android:id="@+id/std_days"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/duration_30_days"
                     android:layout_below="@id/std_range"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textColor="@color/dark_blue"
                     android:layout_centerHorizontal="true"
-                    android:id="@+id/std_days"/>
+                    android:text="@string/duration_30_days"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/dark_blue" />
+
                 <TextView
+                    android:id="@+id/std_return"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/return_5"
                     android:layout_below="@id/std_days"
-                    android:textColor="@color/dark_blue"
                     android:layout_centerHorizontal="true"
-                    android:id="@+id/std_return"/>
+                    android:text="@string/return_5"
+                    android:textColor="@color/dark_blue" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/std_deposit_btn"
